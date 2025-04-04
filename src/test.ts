@@ -1,3 +1,5 @@
-export function someFN(arg: number): string {
-  return "arg";
+export function someFn(arg: number): string {
+  console.log("test componet");
+
+  return "";
 }

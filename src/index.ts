@@ -1,3 +1,5 @@
-import { someFN } from "./test";
+import { someFn } from "./test";
 
-someFN(1);
+someFn(123);
+
+document.body.innerHTML = `<div style="background: green">HELLO WORLD!</div>`;
