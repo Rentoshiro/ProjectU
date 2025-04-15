@@ -1,6 +1,4 @@
-import React from "react";
-
-export const MainPage = () => {
+const MainPage = () => {
   return (
     <div className="main-page">
       <h1>Main Page</h1>
@@ -8,3 +6,5 @@ export const MainPage = () => {
     </div>
   );
 };
+
+export default MainPage;
