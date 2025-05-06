@@ -1,4 +1,7 @@
 {
   "Test example": "Тестовый пример",
-  "Translate": "Перевести"
+  "Translate": "Перевести",
+  "PageNotFound": "Страница не найдена",
+  "Error happend": "Произошла ошибка",
+  "ErrorBtn": "Вызвать ошибку"
 }
