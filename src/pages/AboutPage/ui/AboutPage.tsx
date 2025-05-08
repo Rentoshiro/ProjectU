@@ -1,12 +1,14 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 
 const AboutPage = () => {
-  const { t } = useTranslation("about"); // Specify the namespace if needed
-  return (
-    <div>
-      <h1>{t("About page")}</h1>
-    </div>
-  );
+                const { t } = useTranslation("about");
+
+                return (
+                                <div>
+                                                {t("О сайте")}
+                                </div>
+                );
 };
 
 export default AboutPage;

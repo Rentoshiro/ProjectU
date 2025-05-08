@@ -1,14 +1,15 @@
-import cls from "./Loader.module.scss";
-import { classNames } from "shared/lib/className/classNames";
+import { classNames } from "shared/lib/classNames/classNames";
+import "./Loader.scss";
 
 interface LoaderProps {
-  className?: string;
+    className?: string;
 }
-export const Loader = ({ className }: LoaderProps) => {
-  return (
-    <div className={classNames(cls.ldsripple, {}, [className])}>
-      <div></div>
-      <div></div>
-    </div>
-  );
-};
+
+export const Loader = ({ className }: LoaderProps) => (
+                <div className={classNames("lds-ellipsis", {}, [className])}>
+                                <div />
+                                <div />
+                                <div />
+                                <div />
+                </div>
+);
