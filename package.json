@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test:ui:ci": "npm run build-storybook && npm run serve-storybook & loki test --requireReference --reactUri http://localhost:6006",
+    "serve-storybook": "serve -s storybook-static -l 6006",
+    "build-storybook": "build-storybook",
     "start": "webpack serve --env port=3000",
     "build:prod": "webpack  --env mode=production",
     "build:dev": "webpack  --env mode=development",
@@ -31,6 +34,7 @@
     "@storybook/addon-interactions": "^6.5.16",
     "@storybook/addon-links": "^6.5.16",
     "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/cli": "^8.6.12",
     "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.9",
@@ -69,6 +73,7 @@
     "sass": "^1.87.0",
     "sass-loader": "^12.6.0",
     "semver": "^7.7.1",
+    "serve": "^14.2.4",
     "style-loader": "^3.3.4",
     "stylelint": "^14.16.1",
     "stylelint-config-standard-scss": "^3.0.0",
@@ -92,12 +97,12 @@
   "loki": {
     "configurations": {
       "chrome.laptop": {
-        "target": "chrome.app",
+        "target": "chrome.docker",
         "width": 1366,
         "height": 768
       },
       "chrome.iphone7": {
-        "target": "chrome.app",
+        "target": "chrome.docker",
         "preset": "iPhone 7"
       }
     }
