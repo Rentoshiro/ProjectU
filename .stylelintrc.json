@@ -4,7 +4,7 @@
   "rules": {
     "selector-class-pattern": null,
     "string-quotes": "single",
-    "indentation": 2,
+    "indentation": 4,
     "scss/dollar-variable-pattern": "^foo",
     "scss/percent-placeholder-pattern": "^bar"
   }

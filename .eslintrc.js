@@ -18,7 +18,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:i18next/recommended",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
   ],
   plugins: ["@typescript-eslint", "react", "jsx-a11y", "i18next"],
   rules: {

@@ -11,16 +11,8 @@
 }
 
 .outline {
+  padding: 10px 15px;
   border: 1px solid var(--primary-color);
-  background: none;
   color: var(--primary-color);
-  padding: 10px 15px;
-}
-
-.outlinedark {
-  border: 1px solid var(--primary-color);
   background: none;
-  padding: 10px 15px;
-  box-shadow: 0 0 5px var(--primary-color);
-  transition: all 0.3s ease;
 }
