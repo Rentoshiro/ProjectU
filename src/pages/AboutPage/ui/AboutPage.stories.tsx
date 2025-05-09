@@ -1,25 +1,22 @@
-// src/pages/AboutPage/AboutPage.stories.tsx
-import React from "react";
-import type { Meta, StoryObj } from "@storybook/react";
-import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
-import { Theme } from "app/providers/ThemeProvider";
-import AboutPage from "./AboutPage";
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from 'app/providers/ThemeProvider';
+import AboutPage from './AboutPage';
 
-const meta: Meta<typeof AboutPage> = {
-  title: "pages/AboutPage",
-  component: AboutPage,
-  // Poţi seta tema "light" pentru toate story-urile implicit aici:
-  decorators: [ThemeDecorator(Theme.LIGHT)],
-};
-export default meta;
+export default {
+    title: 'pages/AboutPage',
+    component: AboutPage,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
+} as ComponentMeta<typeof AboutPage>;
 
-type Story = StoryObj<typeof AboutPage>;
+const Template: ComponentStory<typeof AboutPage> = (args) => <AboutPage {...args} />;
 
-export const Normal: Story = {
-  // va moşteni LIGHT din meta
-};
+export const Normal = Template.bind({});
+Normal.args = {};
 
-export const Dark: Story = {
-  // doar aici "override"-ăm tema:
-  decorators: [ThemeDecorator(Theme.DARK)],
-};
+export const Dark = Template.bind({});
+Dark.args = {};
+Dark.decorators = [ThemeDecorator(Theme.DARK)];
