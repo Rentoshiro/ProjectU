@@ -3,8 +3,8 @@
   "plugins": ["stylelint-scss"],
   "rules": {
     "selector-class-pattern": null,
-    "string-quotes": "single",
-    "indentation": 4,
+    "string-quotes": "double",
+    "indentation": 2,
     "scss/dollar-variable-pattern": "^foo",
     "scss/percent-placeholder-pattern": "^bar"
   }
