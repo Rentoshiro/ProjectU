@@ -6,6 +6,8 @@
     "string-quotes": "double",
     "indentation": 2,
     "scss/dollar-variable-pattern": "^foo",
-    "scss/percent-placeholder-pattern": "^bar"
+    "scss/percent-placeholder-pattern": "^bar",
+    "max-empty-lines": 2
   }
 }
+
