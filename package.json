@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:ui:ci": "npm run build-storybook && npm run serve-storybook & loki test --requireReference --reactUri http://localhost:6006",
+    "test:ui:ci": "loki --requireReference --reactUri file:./storybook-static",
     "serve-storybook": "serve -s storybook-static -l 6006",
     "build-storybook": "build-storybook",
     "start": "webpack serve --env port=3000",
@@ -17,7 +17,6 @@
     "test:unit": "jest --config ./config/jest/jest.config.ts",
     "test:ui": "npx loki test",
     "test:ui:ok": "npx loki approve",
-    "test:ui:ci": "loki --requireReference --reactUri file:./storybook-static",
     "storybook": "start-storybook -p 6006 -c ./config/storybook",
     "storybook:build": "build-storybook -c ./config/storybook"
   },
@@ -69,6 +68,7 @@
     "jest": "^27.5.1",
     "loki": "^0.28.1",
     "mini-css-extract-plugin": "^2.9.2",
+    "reg-cli": "^0.17.6",
     "regenerator-runtime": "^0.13.11",
     "sass": "^1.87.0",
     "sass-loader": "^12.6.0",
