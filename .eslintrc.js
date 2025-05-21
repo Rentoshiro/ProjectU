@@ -35,14 +35,25 @@ module.exports = {
     "plugin:storybook/recommended",
   ],
 
-  plugins: ["@typescript-eslint", "react", "jsx-a11y", "i18next"],
+  plugins: [
+    "@typescript-eslint",
+
+    "react",
+
+    "jsx-a11y",
+
+    "i18next",
+
+    "react-hooks",
+  ],
 
   rules: {
     // Force double quotes
-
+    "import/prefer-default-export": off,
+    "no-param-reassign": off,
     quotes: ["error", "double"],
 
-    // Windows line endings
+    // Windows line endingss
 
     "linebreak-style": ["error", "windows"],
 
